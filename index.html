@@ -13,7 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script> 
         $(function(){
-          $("#scrolling-banner").load("sections/scrolling-banner.html"); 
+          $("#calendars").load("sections/calendars.html"); 
           $("#header").load("sections/header.html");
           $("#footer").load("sections/footer.html");
         });
@@ -22,103 +22,354 @@
   <body>
 
     <!-- Load header from another file -->
-    <!-- <div id="header"></div> -->
+    <div id="header" style="height:60px;"></div>
 
 
     <!-- ======================= PAGE CONTENT ====================================== -->
-
-    <!-- Hero Image -->
-    <div class="text-center bg-image" style="
-      background-image: url('assets/hero.png');
-      height: 60vh;
-      max-width:100%;
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;"></div>
-
-    <!-- Load Scrolling Header from another file -->
-    <div id="scrolling-banner"></div>
-
-    <!-- Section with 3 cards -->
-    <div class="text-center bg-image pb-5" style="
-        background-image: url('assets/backgrounds/home-bg.png');
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;">
-
-        <div class="clearfix">
-          <img class="img-fluid float-start" src="assets/popup.png" alt="">
+<div>
+    <!-- Hero Carousel -->
+    <div class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/hero-images/home-slider-1.png" class="d-block w-100" alt="...">
         </div>
-
-        <div class="container-sm">
-          <div class="row justify-content-center">
-
-            <div class="col-lg-4 col-md-6 mt-3">
-              <div class="card h-100 p-3" style="background-color: #567252; border: none; border-radius: 0;">
-
-                <div class="card-body d-flex flex-column text-white" style="text-align: left;">
-                  <h5>Ultimate Lifestyle Subscription</h5>
-                  <br>
-                  <p><strong>
-                    A 1-click ULT Lifestyle Subscription & an Electric Portable Blender.</strong>
-                  </p>
-                  <p>
-                    ● Month 1 = ULT Starter Pack <br>
-                    ● Months 2 & 3 = ULT Smart Order Pack <br>
-                    ● Months 4+ = ULT Maintenance Packs* <br>
-                  </p>
-                  <a href="https://ultlifestyle.com/" class="btn mt-auto btn-light btn-block" style="border-radius: 0;  width: 100%;">Learn More</a>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mt-3">
-              <div class="card h-100 p-3" style="background-color: #AE9A60; border: none; border-radius: 0;">
-
-                <div class="card-body d-flex flex-column text-white" style="text-align: left;">
-                  <h5>The ULT Shop</h5>
-                  <br>
-                  <p><strong>
-                    A simple pathway for all ULT packs and Purium products for today's order.  
-                  </p></strong>
-                  <p>
-                    ● Month 1 = ULT Starter Pack & Stainless Steel Shaker Bottle<br>
-                    ● Months 2+ = Integrated Smart Order Path
-                  </p>
-                  <a href="https://ultpack.com/" class="btn mt-auto btn-light btn-block" style="border-radius: 0;  width: 100%;">Learn More</a>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mt-3">
-              <div class="card h-100 p-3" style="background-color: #AD5C4C; border: none; border-radius: 0;">
-
-                  <div class="card-body d-flex flex-column text-white" style="text-align: left;">
-                    <h5>Quickshop</h5>
-                    <br>
-                    <p><strong>
-                        Purium's full product shop. </strong>
-                    </p><br>
-                    <p>
-                      ● Integrated Smart Order Path<br>
-                      ● Both 25% Off or $50 Off discounts apply
-                    </p><br>
-                    <a href="https://puriumquickshop.com/TodaysOrder" class="btn mt-auto btn-light btn-block" style="border-radius: 0;  width: 100%;">Learn More</a>
-                </div>
-
-              </div>
-            </div>
-
+        <div class="carousel-item">
+          <img src="assets/hero-images/home-slider-2.png" class="d-block w-100" alt="...">
         </div>
+        <div class="carousel-item">
+          <img src="assets/hero-images/home-slider-3.png" class="d-block w-100" alt="...">
         </div>
-      
+        <div class="carousel-item">
+          <img src="assets/hero-images/home-slider-4.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
     </div>
 
-    <!-- ============================================================ -->
+    <!-- Plastic Saved -->
+    <div class="text-center p-3" style="background-color:#617960; color:white;">
+      <p class="mb-0">xxx<br>Pounds of Plastic Saved & Replaced by Compositable Packaging</p>
+    </div>
+
+    <!-- Shop 2 cols -->
+    <div class="container mt-5">
+      <div class="row mt-3 justify-content-center">
+        <div class="col-12 col-md-5 text-center p-5">
+          <a href="https://ultlifestyle.com" class="mnsrt-md text-decoration-none">
+            <img class="img-fluid" src="assets/homepage-assets/shop-ult.png" alt="Shop ULT" style="margin-bottom: 10px;">
+            <h4 class="mnsrt-md pt-3" style="color:#3A5838;">Shop Ultimate<br>Lifestyle Transformations</h4>
+          </a>
+        </div>
+        <div class="col-12 col-md-5 text-center p-5">
+          <a href="#" class="mnsrt-md text-decoration-none">
+            <img class="img-fluid" src="assets/homepage-assets/shop-all.png" alt="Shop All" style="margin-bottom: 10px;">
+            <h4 class="mnsrt-md pt-3" style="color:#45589e;">Shop<br>All Products</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Badges Section -->
+    <div class="container text-center mt-5">
+      <h1 class="lora-bold" style="color:#3a5838">Pure + Premium = Purium</h1>
+      <div class="row mt-5">
+        <div class="col-4 col-md-2 d-flex flex-column p-3">
+          <img class="img-fluid align-self-center" src="assets/icons/badge-organic.png" alt=" USDA Organic">
+          <p class="mt-auto mb-0">Organic</p>
+        </div>
+        <div class="col-4 col-md-2 d-flex flex-column p-3">
+          <img class="img-fluid align-self-center" src="assets/icons/badge-plasticfree.png" alt="Plastic Free">
+          <p class="mt-auto mb-0">Plastic-Free</p>
+        </div>
+        <div class="col-4 col-md-2 d-flex flex-column p-3">
+          <img class="img-fluid align-self-center" src="assets/icons/badge-vegan.png" alt="Vegan">
+          <p class="mt-auto mb-0">Vegan</p>
+        </div>
+        <div class="col-4 col-md-2 d-flex flex-column p-3">
+          <img class="img-fluid align-self-center" src="assets/icons/badge-nongmo.png" alt="Non GMO">
+          <p class="mt-auto mb-0">Non-GMO</p>
+        </div>
+        <div class="col-4 col-md-2 d-flex flex-column p-3">
+          <img class="img-fluid align-self-center" src="assets/icons/badge-glutenfree.png" alt="Gluten Free">
+          <p class="mt-auto mb-0">Gluten-Free</p>
+        </div>
+        <div class="col-4 col-md-2 d-flex flex-column p-3">
+          <img class="img-fluid align-self-center" src="assets/icons/badge-farming.png" alt="Regenerative Farming Practices">
+          <p class="mt-auto mb-0">Regenerative Farming Practices</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10 points commitment -->
+  <div class="pt-5 pb-5 mt-5 bg-image" style="
+    background-image: url('assets/backgrounds/10points.png');
+    max-width:100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h3 class="mb-5 mt-3 text-center lora-bold">10 point Quality Commitment</h3>
+
+            <div class="mb-5" style="width: fit-content; margin:auto;">
+              <div class="d-flex">
+                <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+                <p class="d-inline-block" style="margin-left: 30px;">Certified Organic Farmers</p>
+              </div>
+              <div class="d-flex">
+                <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+                <p class="d-inline-block" style="margin-left: 30px;">Regenerative Farming Practices</p>
+              </div>
+              <div class="d-flex">
+                <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+                <p class="d-inline-block" style="margin-left: 30px;">Synergistically Combined Formulas</p>
+              </div>
+              <div class="d-flex">
+                <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+                <p class="d-inline-block" style="margin-left: 30px;">On-site Microbiology Department</p>
+              </div>
+              <div class="d-flex">
+                <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+                <p class="d-inline-block" style="margin-left: 30px;">Ingredient Identification Testing</p>
+              </div>
+              <div class="d-flex">
+                <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+                <p class="d-inline-block" style="margin-left: 30px;">Allergen Program / Gluten Testing</p>
+              </div>
+              <div class="d-flex">
+                <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+                <p class="d-inline-block" style="margin-left: 30px;">OK Certified Kosher</p>
+              </div>
+              <div class="d-flex">
+                <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+                <p class="d-inline-block" style="margin-left: 30px;">QAI Certified Organic</p>
+              </div>
+              <div class="d-flex">
+                <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+                <p class="d-inline-block" style="margin-left: 30px;">GMP FDA Registered Facility</p>
+              </div>
+              <div class="d-flex">
+                <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+                <p class="d-inline-block" style="margin-left: 30px;">60-Day Money Back Guarante</p>
+              </div>
+            </div>
+          
+        </div>
+        <div class="col-12 col-md-6">
+          <h3 class="mb-5 mt-3 text-center lora-bold" style="padding: 0 10px;">10 point Purity Commitment</h3>
+
+          <div class="mb-5" style="width: fit-content; margin:auto;">
+            <div class="d-flex">
+              <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+              <p class="d-inline-block" style="margin-left: 30px;">No Artificial Colors</p>
+            </div>
+            <div class="d-flex">
+              <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+              <p class="d-inline-block" style="margin-left: 30px;">No Artificial Flavors</p>
+            </div>
+            <div class="d-flex">
+              <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+              <p class="d-inline-block" style="margin-left: 30px;">No Artificial Sweeteners</p>
+            </div>
+            <div class="d-flex">
+              <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+              <p class="d-inline-block" style="margin-left: 30px;">No Synthetic Vitamins</p>
+            </div>
+            <div class="d-flex">
+              <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+              <p class="d-inline-block" style="margin-left: 30px;">No Binders</p>
+            </div>
+            <div class="d-flex">
+              <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+              <p class="d-inline-block" style="margin-left: 30px;">No Fillers</p>
+            </div>
+            <div class="d-flex">
+              <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+              <p class="d-inline-block" style="margin-left: 30px;">No GMO's</p>
+            </div>
+            <div class="d-flex">
+              <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+              <p class="d-inline-block" style="margin-left: 30px;">No Pesticides</p>
+            </div>
+            <div class="d-flex">
+              <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+              <p class="d-inline-block" style="margin-left: 30px;">No Herbicides</p>
+            </div>
+            <div class="d-flex">
+              <img class="d-inline-block align-self-start" src="assets/icons/Checkmark-white.png" alt="Checkmark">
+              <p class="d-inline-block" style="margin-left: 30px;">Plastic Free Packaging</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  </div>
+
+
+  <!-- Easily Create Healthy Habits -->
+  <div class="container text-center pt-5">
+    <h1 class="m-3 pt-5 lora-bold" style="color:#3A5838">Easily Create Healthy Habits</h1>
+    <h3 class="m-3 js-reg" style="color: #1a1a1a;">Lifestyle Subscription</h3>
+    <p>Purium’s proven lifestyle transformation programs have been the blueprint for permanent, lasting change for hundreds of thousands of customers. For each of them, it began with a commitment. A commitment made to themselves that they were ready to create a better life. At Purium, we are confident we have a program that’s right for you. Each program is built around four core nutrition products , is simple to follow and makes it easy to achieve your health, fitness and aesthetic goals. Be proud of your commitment, stay consistent and be transformed!</p>
+    <img class="img-fluid mt-5" src="assets/homepage-assets/blender.png" alt="">
+  </div>
+
+
+  <!-- Calendars section -->
+  <div id="calendars"></div>
+
+
+  <!-- Habits Transformed -->
+  <div class="container mt-5 pt-5 mb-5">
+    <h1 class="text-center lora-bold" style="color:#12564b;">Habits Transformed</h1>
+
+    <div class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/homepage-assets/habits-1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/homepage-assets/habits-2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/homepage-assets/habits-3.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/homepage-assets/habits-4.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/homepage-assets/habits-5.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/homepage-assets/habits-6.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Transform into your best life -->
+  <div class="" style="background-color: #7F927D; color:white;">
+    <div class="container text-center pt-5 pb-5">
+      <h1>Transform into Your Best Life</h1>
+      <p class="m-3">The ULT floods your body with nutrient-rich superfoods without requiring harsh restrictions on your diet. By meeting your nutritional needs with high quality foods, cravings and habits that stem from undernourishment naturally lessen. Soon taste buds shift and stress eating comfort foods are not so comforting.</p>
+      <div class="row justify-content-center" style="padding: 0 1rem">
+        <!-- <div class="col col-xs-1"></div> -->
+        <div class="col p-3 col-md-3 d-flex">
+          <div class="align-self-center" style="margin:auto;">
+            <h3>How will you transform?</h3>
+            <hr style="height:3px; color: white; opacity: 1;">
+            <div class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h2>Weight Loss</h2>
+                </div>
+                <div class="carousel-item">
+                  <h2>Beautiful Aging</h2>
+                </div>
+                <div class="carousel-item">
+                  <h2>Fitness</h2>
+                </div>
+                <div class="carousel-item">
+                  <h2>Performance</h2>
+                </div>
+                <div class="carousel-item">
+                  <h2>Immune Health</h2>
+                </div>
+                <div class="carousel-item">
+                  <h2>Family</h2>
+                </div>
+                <div class="carousel-item">
+                  <h2>Nutrition</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col col-md-3 p-3">
+          <div class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/homepage-assets/transform-1.png" class="d-block w-100" style="max-width: 340px;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/homepage-assets/transform-2.png" class="d-block w-100" style="max-width: 340px;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/homepage-assets/transform-3.png" class="d-block w-100" style="max-width: 340px;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/homepage-assets/transform-4.png" class="d-block w-100" style="max-width: 340px;" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col col-xs-1"></div> -->
+      </div>
+      <a href="#" class="btn mt-3" style="background-color: #E5E9E5; color:#7F927D; border-radius:3px; width:300px">Transform Today</a>
+    </div>
+  </div>
+
+  <!-- Why Now? -->
+  <div class="container; mt-5 mb-5 p-2">
+    <h1 class="text-center lora-bold" style="color:#7F927D;">Why Now?</h1>
+    <div class="carousel slide mt-5 mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner" style="margin:auto;">
+        <div class="carousel-item active">
+          <img src="assets/homepage-assets/Whynow-1.png" class="d-block w-100" style="max-width:800px; margin:auto;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/homepage-assets/whynow-2.png" class="d-block w-100" style="max-width:800px; margin:auto;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/homepage-assets/whynow-3.png" class="d-block w-100" style="max-width:800px; margin:auto;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/homepage-assets/whynow-4.png" class="d-block w-100" style="max-width:800px; margin:auto;" alt="...">
+        </div>
+      </div>
+    </div>
+    <hr style="height:5px; color:#617960; opacity:1; border-radius: 5px; margin: auto; max-width:1000px;">
+  </div>
+
+  <!-- Cofounders -->
+  <div style="background-color:#EEF2FF">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 p-2" >
+          <img src="assets/homepage-assets/AmyandDave.png" alt="" class="img-fluid" style="max-width: 400px; display:block; margin:auto;">
+        </div>
+        <div class="col-md-6 col-sm-12 p-5" style="background-color:#EEF2FF">
+          <h1>Co-founders<br> with a <i>Passion</i></h1>
+          <p>Purposefully providing:</p>
+          <ul>
+            <li>Pure + Premium Products</li>
+            <li>1% Highest Most Potent Food</li>
+            <li>Proven Glyphosate Solution</li>
+            <li>Plastic-free Packaging</li>
+            <li>Most Efficient Food Delivery System</li>
+          </ul>
+          <a href="" class="btn mt-3" style="background-color: #7387D0; width:100%; color:white;">Learn more about Amy Venner</a>
+          <a href="" class="btn mt-3" style="background-color: #7387D0; width:100%; color: white;">Learn more about Dave Sandoval</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!-- ============================================================ -->
 
 
     <!-- Load Footer from another file -->

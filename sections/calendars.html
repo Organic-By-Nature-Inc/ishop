@@ -1,0 +1,186 @@
+<style>
+.popupoverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+.popupcontent {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 1002;
+  right: 0;
+  left: 0;
+  margin: 20%;
+}
+</style>
+
+<div class="container text-center pt-5" style="max-width:720px;">
+    <div class="row pt-3">
+      <div class="col">
+        <h3 class="lora-bold" style="color:#3A5838">Make A<br>Commitment</h3>
+        <div class="pt-5 pb-5 mt-3 bg-image calendar" style="
+          background-image: url('assets/homepage-assets/calendar.png');
+          max-width:180px;
+          background-position: bottom;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          margin:auto;
+          color: #617960">Month 1:<br><a class="calendar" id="calendar1">Learn More</a></div>
+            <div id="popup1" class="popupcontent p-5" style="display:none;">
+                <h2 class="pb-5 lora-bold" style="color:#3a5838">Month 1<br>Commitment Benefits</h2>
+                <div class="row">
+                    <div class="col">
+                        <ul style="color:#3a5838; text-align: left;">
+                            <li>Alkalize Your Body</li>
+                            <li>Build Muscle</li>
+                            <li>Improve Sleep</li>
+                            <li>Curb Cravings</li>
+                            <li>Increase Energy</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul style="color:#3a5838; text-align: left;">
+                            <li>Eliminate Toxins</li>
+                            <li>Burn Fat</li>
+                            <li>Enhance Mental Clarity</li>
+                            <li>Reduce Bloating</li>
+                            <li>Create Healthy Habits</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="popup1overlay" class="popupoverlay" style="display:none;"></div>
+        </div>
+
+      <div class="col">
+        <h3 class="lora-bold" style="color:#3A5838">Stay<br>Consistent</h3>
+        <div class="pt-5 pb-5 mt-3 bg-image calendar" style="
+          background-image: url('assets/homepage-assets/calendar.png');
+          max-width:180px;
+          background-position: bottom;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          margin:auto;
+          color: #617960">Month 2<br><a class="calendar" href="">Learn More</a></div>
+            <div id="popup2" class="popupcontent p-5" style="display:none;">
+                <h2 class="pb-5 lora-bold" style="color:#3a5838">Month 2:<br>Stay Consistent Benefits</h2>
+                <div class="row">
+                    <div class="col">
+                        <ul style="color:#3a5838; text-align: left;">
+                            <li>Improve Skin Elasticity</li>
+                            <li>Make Fewer Unhealthy Choices</li>
+                            <li>Eliminate Toxic Glyphosate</li>
+                            <li>Improve Elimination</li>
+                            <li>Look Better in Clothes</li>
+                            <li>Feel More Confident</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul style="color:#3a5838; text-align: left;">
+                            <li>Notice a Brighter Complexion</li>
+                            <li>Crave Purium Superfoods</li>
+                            <li>Support Normal CPR level</li>
+                            <li>Reduce body Odors</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="popup2overlay" class="popupoverlay" style="display:none;"></div>
+        </div>
+    </div>
+    <div class="row pt-5 mb-5">
+      <div class="col">
+        <h3 class="lora-bold" style="color:#3A5838">Be<br>Transformed</h3>
+        <div class="pt-5 pb-5 mt-3 bg-image calendar" style="
+          background-image: url('assets/homepage-assets/calendar.png');
+          max-width:180px;
+          background-position: bottom;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          margin:auto;
+          color: #617960">Month 3<br><a class="calendar" href="">Learn More</a></div>
+            <div id="popup3" class="popupcontent p-5" style="display:none;">
+                <h2 class="pb-5 lora-bold" style="color:#3a5838">Month 3:<br>Be Transformed Benefits</h2>
+                <div class="row">
+                    <div class="col">
+                        <ul style="color:#3a5838; text-align: left;">
+                            <li>Form new healthy routines</li>
+                            <li>Feel cleaner, leaner and stronger</li>
+                            <li>Experience healthier blood glucose</li>
+                            <li>Repair gut microbiome</li>
+                            <li>Break unhealthy habits</li>
+                            <li>Enjoy life at a higher level</li>
+                            <li>Explore healthier food options</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul style="color:#3a5838; text-align: left;">
+                            <li>Look, feel, and perform better</li>
+                            <li>Meet and exceed weight management goals</li>
+                            <li>Food sensitivities decrease</li>
+                            <li>Set positive example</li>
+                            <li>People take notice!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="popup3overlay" class="popupoverlay" style="display:none;"></div>
+        </div>
+      <div class="col">
+        <h3 class="lora-bold" style="color:#3A5838">Maintain<br>Lifestyle</h3>
+        <div class="pt-5 pb-5 mt-3 bg-image calendar" style="
+          background-image: url('assets/homepage-assets/calendar.png');
+          max-width:180px;
+          background-position: bottom;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          margin:auto;
+          color: #617960">Month 4<br><a class="calendar" href="">Learn More</a></div>
+            <div id="popup4" class="popupcontent p-5" style="display:none;">
+                <h2 class="pb-5 lora-bold" style="color:#3a5838">Month 4 & Beyond:<br>Maintain Lifestyle</h2>
+                <ul style="color:#3a5838; text-align: left;">
+                    <li>Review your filled out tracker and be proud of your transformation journey.</li>
+                    <li>Choose Daily Core 4 Nutrition or other ULT pathway depending on your weight management and specific health goals.</li>
+                    <li>Experience healthier blood glucose</li>
+                    <li>Adjust your smart order subscription to match new goals and never be without Purium superfoods!</li>
+                    <li>Think about who you know that could benefit from a transformation!</li>
+                    <li>Reach out to your Purium Brand Partner for support or with a referral at any time!</li>
+                </ul>     
+            </div>
+            <div id="popup4overlay" class="popupoverlay" style="display:none;"></div>
+        </div>
+    </div>
+    <a href="https://ultlifestyle.com" class="btn mt-5 p-3" style="background-color:#617960; color:white; width:300px; border-radius:0;">Subscribe Today</a>
+  </div>
+
+  <script>
+    const popup1 = document.getElementById("popup1");
+    const popupoverlay = document.getElementsByClassName("popupoverlay");
+    const calendar1 = document.getElementById("calendar1");
+    calendar1.onclick = function () {
+      if (popup1.style.display !== "none") {
+        popup1.style.display = "none";
+        popup1overlay.style.display = "none";
+      } else {
+        popup1.style.display = "block";
+        popup1overlay.style.display = "block";
+      }
+    };
+    popup1overlay.onclick = function () {
+        popup1.style.display = "none";
+        popup1overlay.style.display = "none";
+    }
+  </script>

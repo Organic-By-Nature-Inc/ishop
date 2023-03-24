@@ -1,19 +1,203 @@
-<nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">
-        <img src="assets/logos/logo-purium.png" alt="" style="width:80px;">
-      </a>
-      <form class="d-flex input-group w-auto">
-        <input
-          type="search"
-          class="form-control rounded"
-          placeholder="Search"
-          aria-label="Search"
-          aria-describedby="search-addon"
-        />
-        <span class="input-group-text border-0" id="search-addon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </span>
+<style>
+  input[type="search" i]:focus {
+    border-color:#12564B ;
+    box-shadow: 0 1px 1px rgba(9, 95, 48, 0.075) inset, 0 0 8px #617960;
+  outline: 0 none;
+  }
+a.nav-link{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+}
+  .search {
+  position: relative;
+  right: 1.5rem;
+}
+.search * {
+  outline: none;
+  box-sizing: border-box;
+}
+.search__wrapper {
+  position: relative;
+}
+.search__field {
+  width: 30px;
+  height: 30px;
+  background-color:#fcfcf7;
+  color: transparent;
+  font-size: 1em;
+  padding: 0.35em 50px 0.35em 0;
+  border: 2px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.search__field:focus {
+  border-bottom-color: #ccc;
+  width: 20vw;
+  color: #567055;
+  cursor: default;
+}
+.search__field:focus ~ .search__icon {
+  background-color: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.search__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fcfcf7;
+  width: 30px;
+  height: 30px;
+  font-size: 1.35em;
+  text-align: center;
+  border-color: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+  display: inline-block;
+  transition: background-color 0.2s ease-in-out;
+}
+.search__field::-webkit-input-placeholder {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition-property: top, color;
+  transition-duration: .1s;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+.search__field:-moz-placeholder {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition-property: top, color;
+  transition-duration: .1s;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+.search__field::-moz-placeholder {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition-property: top, color;
+  transition-duration: .1s;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+.search__field:-ms-input-placeholder {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition-property: top, color;
+  transition-duration: .1s;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+.search__field::-webkit-input-placeholder[style*=hidden] {
+  font-size: .45em;
+  font-weight: normal;
+  top: -20px;
+  opacity: 1;
+  visibility: visible !important;
+}
+.search__field:-moz-placeholder[style*=hidden] {
+  font-size: .45em;
+  font-weight: normal;
+  top: -20px;
+  opacity: 1;
+  visibility: visible !important;
+}
+.search__field::-moz-placeholder[style*=hidden] {
+  font-size: .45em;
+  font-weight: normal;
+  top: -20px;
+  opacity: 1;
+  visibility: visible !important;
+}
+.search__field:-ms-input-placeholder[style*=hidden] {
+  font-size: .45em;
+  font-weight: normal;
+  top: -20px;
+  opacity: 1;
+  visibility: visible !important;
+}
+@media (min-width: 992px) {
+  .mobile-search {
+    display:none !important;
+  }
+  .desktop-search {
+    display:block ;
+  }
+}
+@media (max-width: 991px) {
+  .mobile-search {
+    display:block;
+  }
+  .desktop-search {
+    display:none !important;
+  }
+}
+
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #FCFCF7;">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      <img src="assets/logos/logo-purium.png" alt="" style="width:80px;">
+      <img src="assets/logos/logo.png" alt="" style="width:40px;">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="margin-right: 30px !important;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color: #567055">Lifestyle Subscription</a>
+        </li>
+        <li class="nav-item desktop-search" style="font-size:26px; color:#567055;">•</li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #567055">Transformation</a>
+        </li>
+        <li class="nav-item desktop-search" style="font-size:26px; color:#567055;">•</li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #567055">All Products</a>
+        </li>
+        <li class="nav-item desktop-search" style="font-size:26px; color:#567055;">•</li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #567055">Login</a>
+        </li>
+      </ul>
+      <!-- Mobile Search -->
+      <form class="d-flex mobile-search js-bold">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn" type="submit">
+          <img src="assets/icons/magnifying-glass-solid.svg" alt="" style="width:20px;">
+        </button>       
       </form>
+      <!-- Desktop -->
+      <form class="search desktop-search">
+        <div class="search__wrapper">
+          <input type="text" name="" placeholder="Search" class="search__field js-bold">
+          <button type="submit" class="fa fa-search search__icon"></button>
+        </div>
+      </form>
+
     </div>
-  </nav>
+  </div>
+</nav>
