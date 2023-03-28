@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Connect to Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Allow page to display correctly on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script> 
+        $(function(){
+          $("#header").load("sections/header.html"); 
+          $("#footer").load("sections/footer.html");
+        });
+    </script> 
+  </head>
+  <body>
+
+
+    <!-- Load header from another file -->
+    <div id="header" style="height:60px;"></div>
+
+    <!-- ======================= PAGE CONTENT ====================================== -->
+
+<style>
+    /* Customization of accordeon */
+    .accordion-button::after {
+        background: url('https://www.puriumcorporate.com/puriumMedia/wp-content/uploads/2023/03/sort-1.png') no-repeat 100% 50%;
+    }
+    .accordion-button:not(.collapsed)::after {
+        background-image: url('https://www.puriumcorporate.com/puriumMedia/wp-content/uploads/2023/03/sort-1.png');
+        transform: unset;
+    }
+    .accordion-button:focus {
+        z-index: 3;
+        border-color: transparent;
+        box-shadow: unset;
+    }
+</style>
+
+
+<div style="max-width: 1400px; margin:auto;">
+
+
+    <!-- Hero Image -->
+    <div class="container">
+        <img class="img-fluid" style="margin:auto;" src="assets/hero-images/incentives-1.png"/>
+    </div>
+
+    <!-- Accordeon -->
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" style="background-color: #80927E; color: white; border-radius: 0;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                First Purchase
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #f8f8f8;">
+                    <ul class="list-unstyled">
+                        <li>25% Loyal Customer</li>
+                        <li>Smart Order Subscription</li>
+                        <li>Rewards Points</li>
+                        <li>3 & Then Free</li>
+                        <li>Post Product Love, Get $10 Off Your Next Order</li>
+                        <li>Share a Review with Photos, Get $10 Off Your Next Order</li>
+                        <li>Upgrade to a Brand Partner</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- First Purchase Incentives -->
+    <div class="container mt-5">
+        <h1 class="lora-bold text-center m-3" style="color: #617960">First Purchase Incentives</h1>
+        <p class="text-center">Use your Brand Partner's Gift Code and save on your first Purium order. The more you shop, the more you save. Discounted pricing begins when your first purchase is at least $75. Subscribe to Smart Order upon checkout for future self & savings.</p>
+        <img class="img-fluid" style="margin:auto;" src="assets/hero-images/incentives-2.png"/>
+        <div class="row  mt-5">
+            <div class="col text-center">
+                <h1 class="js-bold m-0" style="color: #617960">$50 Off</h1>
+                <p>Shop $75</p>
+            </div>
+            <div class="col text-center">
+                <h1 class="js-bold m-0" style="color: #617960">25% Off</h1>
+                <p>Shop $200+</p>
+            </div>
+            <div class="col text-center">
+                <h1 class="js-bold m-0" style="color: #617960">Free Shipping</h1>
+                <p>Shop $250+</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Returning Customers -->
+    <div style="background-color: #f8f8f8;">
+        <div class="container text-center">
+            <h1 class="lora-bold pt-5 pb-3" style="color: #3A4C8D">Returning Customers<br> Shop More, <i>Save More</i></h1>
+            <p class="mb-5">Order every month to maximize your savings.<br>ree or reduced shipping at orders of $250 & more.</p>
+            <div class="row">
+                <div class="col">
+                    <img src="assets/icons/inc-1.png" alt="" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="assets/icons/inc-2.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="assets/icons/inc-3.png" alt="" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="assets/icons/inc-4.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Smart Order Subscriptions Incentives -->
+    <img class="img-fluid" style="margin:auto;" src="assets/hero-images/incentives-3.png"/>
+    <div style="background-color:#FEFBF5">
+        <div class="container p-4">
+            <ul class="mt-3">
+                <li>Commit to your healthy habits</li>
+                <br>
+                <li>Ensure the maximum discount every month of 25% off</li>
+                <br>
+                <li>Qualify for Free Product Promotion 2 & Then Free</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="container text-center mt-5 mb-5">
+        <h1 style="color:#617960;">Two Kinds of Smart Order</h1>
+        <div class="row mt-5">
+            <div class="col">
+                <h1 class="lora-bold" style="color: #891A56"><i>Always Ship</i></h1>
+                <img class="img-fluid" style="margin:auto;" src="assets/icons/inc-time.png"/>
+            </div>
+            <div class="col">
+                <h1 class="lora-bold" style="color: #891A56"><i>Backup Order</i></h1>
+                <img class="img-fluid" style="margin:auto;" src="assets/icons/inc-box.png"/>
+            </div>
+        </div>
+        <p class="mt-5">"Always Ship" is the default for most orders,<br>yet you can edit in your iShopPurium.com Account.</p>
+    </div>
+    <img class="img-fluid" style="margin:auto;" src="assets/hero-images/incentives-4.png"/>
+
+
+    <!-- 3 & then free -->
+    <img class="img-fluid" style="margin:auto;" src="assets/hero-images/incentives-5.png"/>
+    <div class="container text-center mt-5 mb-5">
+        <p>Writing effectively is an art. Start by using simple, everyday words people can easily understand. Be clear and direct to the point. Keep your thoughts flowing logically, and aim for brevity. Your ideas have a purpose, so choose words that accurately express them.</p>
+        <div class="row mt-5 align-items-end">
+            <div class="col">
+                <img class="img-fluid" style="margin:auto;" src="assets/icons/incentives-1.png"/>
+                <p class="lora-bold m-0" style="color: #397168; text-decoration: underline;"><i>Renew Hair,<br>Skin & Nails</i></p>
+            </div>
+            <div class="col">
+                <img class="img-fluid" style="margin:auto;" src="assets/icons/incentives-2.png"/>
+                <p class="lora-bold m-0" style="color: #397168; text-decoration: underline;"><i>Revive-It-All</i></p>
+            </div>
+            <div class="col">
+                <img class="img-fluid" style="margin:auto;" src="assets/icons/incentives-3.png"/>
+                <p class="lora-bold m-0" style="color: #397168; text-decoration: underline;"><i>Joint Flex</i></p>
+            </div>
+            <div class="col">
+                <img class="img-fluid" style="margin:auto;" src="assets/icons/incentives-4.png"/>
+                <p class="lora-bold m-0" style="color: #397168; text-decoration: underline;"><i>Heart Aid</i></p>
+            </div>
+        </div>
+        <div class="row mt-5 align-items-end">
+            <div class="col">
+                <img class="img-fluid" style="margin:auto;" src="assets/icons/incentives-5.png"/>
+                <p class="lora-bold m-0" style="color: #397168; text-decoration: underline;"><i>Super Xantin</i></p>
+            </div>
+            <div class="col">
+                <img class="img-fluid" style="margin:auto;" src="assets/icons/incentives-6.png"/>
+                <p class="lora-bold m-0" style="color: #397168; text-decoration: underline;"><i>EpiGenius Family</i></p>
+            </div>
+            <div class="col">
+                <img class="img-fluid" style="margin:auto;" src="assets/icons/incentives-7.png"/>
+                <p class="lora-bold m-0" style="color: #397168; text-decoration: underline;"><i>EpiGenius Dogs</i></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- How does it work? -->
+    <div class="container text-center pt-5 mb-5">
+        <h1 class="mt-5 p-3" style="color: #397168;">How does it work?</h1>
+        <h3>Purchase one of the products below for three consecutive months, and have an active Smart Order, you receive the product for FREE in the fourth month. Search QuickShop to add eligible products to your order.</p>
+        <a href="" class="btn js-reg" style="background-color: #397168; padding:5px; width:200px; color:white; font-family: 'Josefin Sans', sans-serif; font-weight: 400;">Go Shop</a>
+    </div>
+
+
+    <!-- Interested in Sharing Purium -->
+    <div class="container text-center mt-5">
+        <h1 class="lora-bold" style="color:#CA714B">Interested in Sharing Purium with your own Gift Code?</h1>
+        <h4 class="pt-3">How much you earn depends on how much you share.</h4>
+        <div class="m-5">
+            <h1 class="" style="color:#3A5838;">Pay for Your Products</h1>
+            <p>Share products with people you know.</p>
+            <hr class="mt-4" style="height:3px; border-radius: 5px; width:300px; margin: auto; opacity:1;">
+        </div>
+        <div class="m-5 pt-1">
+            <h1 class="" style="color:#9261B8;">Pay for Your Lifestyle</h1>
+            <p>Build a team of Brand Partners<br>who love to change the world together.</p>
+            <hr class="mt-4" style="height:3px; border-radius: 5px; width:300px; margin: auto; opacity:1;">
+        </div>
+    </div>
+
+
+    <div class="container text-center mb-5 pb-5">
+        <h3><i>Reach out to the person who referred you to<br>Purium to learn more today!</i></h3>
+    </div>
+    <img class="img-fluid" style="margin:auto;" src="assets/hero-images/incentives-6.png"/>
+
+</div>
+
+
+
+
+
+    <!-- =========================================================================== -->
+
+
+
+
+    <!-- Load Footer from another file -->
+    <div id="footer"></div>
+
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
