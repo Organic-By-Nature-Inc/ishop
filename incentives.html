@@ -63,13 +63,13 @@
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body" style="background-color: #f8f8f8;">
                     <ul class="list-unstyled">
-                        <li>25% Loyal Customer</li>
-                        <li>Smart Order Subscription</li>
-                        <li>Rewards Points</li>
-                        <li>3 & Then Free</li>
-                        <li>Post Product Love, Get $10 Off Your Next Order</li>
-                        <li>Share a Review with Photos, Get $10 Off Your Next Order</li>
-                        <li>Upgrade to a Brand Partner</li>
+                        <li><a href="#loyalcus">25% Loyal Customer</a></li>
+                        <li><a href="#smartorder">Smart Order Subscription</a></li>
+                        <li><a href="#rewards">Rewards Points</a></li>
+                        <li><a href="#3andfree">3 & Then Free</a></li>
+                        <li><a href="#post">Post Product Love, Get $10 Off Your Next Order</a></li>
+                        <li><a href="#share">Share a Review with Photos, Get $10 Off Your Next Order</a></li>
+                        <li><a href="#upgrade">Upgrade to a Brand Partner</a></li>
                     </ul>
                 </div>
             </div>
@@ -99,24 +99,33 @@
     </div>
 
     <!-- Returning Customers -->
-    <div style="background-color: #f8f8f8;">
+    <style>
+        .image_off, .loyalcus:hover .image_on{
+        display:none
+        }
+        .image_on, .loyalcus:hover .image_off{
+        display:block
+        }
+    </style>
+
+    <div id="loyalcus" style="background-color: #f8f8f8;">
         <div class="container text-center">
             <h1 class="lora-bold pt-5 pb-3" style="color: #3A4C8D">Returning Customers<br> Shop More, <i>Save More</i></h1>
             <p class="mb-5">Order every month to maximize your savings.<br>ree or reduced shipping at orders of $250 & more.</p>
             <div class="row">
-                <div class="col">
-                    <img src="assets/icons/inc-1.png" alt="" class="img-fluid">
+                <div class="col ">
+                    <a class="loyalcus"><img class="image_on" src="assets/icons/inc-1.png" alt="" style="margin:auto;" /><img class="image_off" src="assets/icons/inc-11.png" alt="" style="margin:auto;" /></a>
                 </div>
                 <div class="col">
-                    <img src="assets/icons/inc-2.png" alt="" class="img-fluid">
+                    <a class="loyalcus"><img class="image_on" src="assets/icons/inc-2.png" alt="" style="margin:auto;" /><img class="image_off" src="assets/icons/inc-22.png" alt="" style="margin:auto;" /></a>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <img src="assets/icons/inc-3.png" alt="" class="img-fluid">
+                    <a class="loyalcus"><img class="image_on" src="assets/icons/inc-3.png" alt="" style="margin:auto;" /><img class="image_off" src="assets/icons/inc-33.png" alt="" style="margin:auto;" /></a>
                 </div>
                 <div class="col">
-                    <img src="assets/icons/inc-4.png" alt="" class="img-fluid">
+                    <a class="loyalcus"><img class="image_on" src="assets/icons/inc-4.png" alt="" style="margin:auto;" /><img class="image_off" src="assets/icons/inc-44.png" alt="" style="margin:auto;" /></a>
                 </div>
             </div>
         </div>
@@ -124,19 +133,19 @@
 
     <!-- Smart Order Subscriptions Incentives -->
     <img class="img-fluid" style="margin:auto;" src="assets/hero-images/incentives-3.png"/>
-    <div style="background-color:#FEFBF5">
+    <div id="smartorder" style="background-color:#FEFBF5">
         <div class="container p-4">
             <ul class="mt-3">
                 <li>Commit to your healthy habits</li>
                 <br>
                 <li>Ensure the maximum discount every month of 25% off</li>
                 <br>
-                <li>Qualify for Free Product Promotion 2 & Then Free</li>
+                <li>Qualify for Free Product Promotion 3 & Then Free</li>
             </ul>
         </div>
 
     </div>
-    <div class="container text-center mt-5 mb-5">
+    <div id="rewards" class="container text-center mt-5 mb-5">
         <h1 style="color:#617960;">Two Kinds of Smart Order</h1>
         <div class="row mt-5">
             <div class="col">
@@ -155,8 +164,8 @@
 
     <!-- 3 & then free -->
     <img class="img-fluid" style="margin:auto;" src="assets/hero-images/incentives-5.png"/>
-    <div class="container text-center mt-5 mb-5">
-        <p>Writing effectively is an art. Start by using simple, everyday words people can easily understand. Be clear and direct to the point. Keep your thoughts flowing logically, and aim for brevity. Your ideas have a purpose, so choose words that accurately express them.</p>
+    <div id="3andfree" class="container text-center mt-5 mb-5">
+        <h3>Purchase one of the products below for three consecutive months, and have an active Smart Order, you receive the product for FREE in the fourth month. Search QuickShop to add eligible products to your order.</p> 
         <div class="row mt-5 align-items-end">
             <div class="col">
                 <img class="img-fluid" style="margin:auto;" src="assets/icons/incentives-1.png"/>
@@ -191,17 +200,11 @@
         </div>
     </div>
 
-
-    <!-- How does it work? -->
-    <div class="container text-center pt-5 mb-5">
-        <h1 class="mt-5 p-3" style="color: #397168;">How does it work?</h1>
-        <h3>Purchase one of the products below for three consecutive months, and have an active Smart Order, you receive the product for FREE in the fourth month. Search QuickShop to add eligible products to your order.</p>
-        <a href="" class="btn js-reg" style="background-color: #397168; padding:5px; width:200px; color:white; font-family: 'Josefin Sans', sans-serif; font-weight: 400;">Go Shop</a>
-    </div>
-
+    <div id="post"></div>
 
     <!-- Interested in Sharing Purium -->
-    <div class="container text-center mt-5">
+    <div id="share" class="container text-center mt-5 pt-5">
+        <br><br>
         <h1 class="lora-bold" style="color:#CA714B">Interested in Sharing Purium with your own Gift Code?</h1>
         <h4 class="pt-3">How much you earn depends on how much you share.</h4>
         <div class="m-5">
@@ -217,7 +220,7 @@
     </div>
 
 
-    <div class="container text-center mb-5 pb-5">
+    <div id="upgrade" class="container text-center mb-5 pb-5">
         <h3><i>Reach out to the person who referred you to<br>Purium to learn more today!</i></h3>
     </div>
     <img class="img-fluid" style="margin:auto;" src="assets/hero-images/incentives-6.png"/>
